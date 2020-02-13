@@ -26,13 +26,13 @@ footer .contents {
     width: 100%;
 }
 
-footer .contents ul {
+footer .contents #form {
     display: flex;
     width: 100%;
     height: 100%;
 }
 
-footer .contents li {
+footer .contents .button {
     font-size: 50px;
     line-height: 50px;
 
@@ -45,7 +45,7 @@ footer .contents li {
     text-align: center;
 }
 
-footer .contents a {
+footer .contents button {
     color: white;
 }
 
@@ -53,8 +53,8 @@ footer .contents a {
 
 footer,
 footer .contents,
-footer .contents ul,
-footer .contents li
+footer .contents #form,
+footer .contents .button
 {
     background-color: rgba(0,0,255,0.3);
 }

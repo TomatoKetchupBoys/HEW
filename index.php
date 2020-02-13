@@ -44,6 +44,72 @@ if (isset($_POST['to_login'])) {
 }
 
 
+if (isset($_POST['hogehoge1'])) {
+    // echo("// ----- you call hogehoge1 ----- //");
+
+    $header = './tpl/header/header.php';
+    $main = './tpl/main/hogehoge1.php';
+    $footer = './tpl/footer/footer.php';
+}
+
+if (isset($_POST['hogehoge2'])) {
+    // echo("// ----- you call hogehoge2 ----- //");
+
+    $header = './tpl/header/header.php';
+    $main = './tpl/main/hogehoge2.php';
+    $footer = './tpl/footer/footer.php';
+}
+
+if (isset($_POST['hogehoge3'])) {
+    // echo("// ----- you call hogehoge3 ----- //");
+
+    $header = './tpl/header/header.php';
+    $main = './tpl/main/hogehoge3.php';
+    $footer = './tpl/footer/footer.php';
+}
+
+if (isset($_POST['hogehoge4'])) {
+    // echo("// ----- you call hogehoge4 ----- //");
+
+    $header = './tpl/header/header.php';
+    $main = './tpl/main/hogehoge4.php';
+    $footer = './tpl/footer/footer.php';
+}
+
+if (isset($_POST['hogehoge5'])) {
+    // echo("// ----- you call hogehoge5 ----- //");
+
+    $header = './tpl/header/header.php';
+    $main = './tpl/main/hogehoge5.php';
+    $footer = './tpl/footer/footer.php';
+}
+
+if (isset($_POST['hogehoge6'])) {
+    // echo("// ----- you call hogehoge6 ----- //");
+
+    $header = './tpl/header/header.php';
+    $main = './tpl/main/hogehoge6.php';
+    $footer = './tpl/footer/footer.php';
+}
+
+
+if (isset($_POST['hogehoge7'])) {
+    // echo("// ----- you call hogehoge7 ----- //");
+
+    $header = './tpl/header/header.php';
+    $main = './tpl/main/hogehoge7.php';
+    $footer = './tpl/footer/footer.php';
+}
+
+
+if (isset($_POST['hogehoge8'])) {
+    // echo("// ----- you call hogehoge8 ----- //");
+
+    $header = './tpl/header/header.php';
+    $main = './tpl/main/hogehoge8.php';
+    $footer = './tpl/footer/footer.php';
+}
+
 // ################### 後処理ファイル呼び出し ##########################
 require_once $header;
 require_once $main;

@@ -24,10 +24,10 @@
         <div class="contents">
             <h1>Youtube</h1>
             <form action="" method="post" id="form">
-                <button type="submit" value="" class="button">A</button>
-                <button type="submit" value="" class="button">B</button>
-                <button type="submit" value="" class="button">C</button>
-                <button type="submit" value="to_login" name="to_login" class="button">D</button>
+                <button type="submit" value="" name="hogehoge1" class="button">A</button>
+                <button type="submit" value="" name="hogehoge2" class="button">B</button>
+                <button type="submit" value="" name="hogehoge3" class="button">C</button>
+                <button type="submit" value="" name="hogehoge4" class="button">D</button>
             </form>
         </div><!-- contents -->
     </header>
