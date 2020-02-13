@@ -7,10 +7,16 @@ require_once "./functions/function.php";
 require_once "../config.php";
 
 // $header, $body, $footerの初期値設定
+
 $header = './tpl/header/header.php';
 $main = './tpl/main/toppage.php';
 $footer = './tpl/footer/footer.php';
 
+// $header = './tpl/header/login_header.php';
+// $main = './tpl/main/login_main.php';
+// $footer = './tpl/footer/login_footer.php';
+
+// var_dump($_POST);
 
 // ################### ボタンアクションの例 ##########################
 if (isset($_POST['button_action'])) {
@@ -24,8 +30,22 @@ if (isset($_POST['button_action'])) {
     // 処理後表示したいphpファイルを指定します
 }
 
+if (isset($_POST['to_login'])) {
+    // echo("// ----- you call to_login ----- //");
+    // POST の値があるときこの分岐に入ります
+
+    // $main = function_name($_POST['button_action']);
+    // この処理の場合は関数は必要ないです。
+
+    $header = './tpl/header/login_header.php';
+    $main = './tpl/main/login_main.php';
+    $footer = './tpl/footer/login_footer.php';
+    // 処理後表示したいphpファイルを指定します
+}
+
 
 // ################### 後処理ファイル呼び出し ##########################
 require_once $header;
 require_once $main;
 require_once $footer;
+// ここで変数内のページを読み込みます

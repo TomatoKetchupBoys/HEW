@@ -23,11 +23,11 @@
     <header>
         <div class="contents">
             <h1>Youtube</h1>
-            <ul>
-                <li><a href="">A</a></li>
-                <li><a href="">B</a></li>
-                <li><a href="">C</a></li>
-                <li><a href="">D</a></li>
-            </ul>
+            <form action="" method="post" id="form">
+                <button type="submit" value="" class="button">A</button>
+                <button type="submit" value="" class="button">B</button>
+                <button type="submit" value="" class="button">C</button>
+                <button type="submit" value="to_login" name="to_login" class="button">D</button>
+            </form>
         </div><!-- contents -->
     </header>

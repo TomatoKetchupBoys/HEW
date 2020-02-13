@@ -40,12 +40,12 @@ header .contents h1 {
     width: 50%;
 }
 
-header .contents ul {
+header .contents #form {
     display: flex;
     width: 50%;
 }
 
-header .contents li {
+header .contents .button {
     font-size: 50px;
     line-height: 50px;
 
@@ -53,15 +53,15 @@ header .contents li {
     padding: 8%;
 }
 
-header .contents a {
+header .contents button {
     color: white;
 }
 
 header,
 header .contents,
 header .contents h1,
-header .contents ul,
-header .contents li
+header .contents #form,
+header .contents .button
 {
-    /* background-color: rgba(255,0,0,0.3); */
+    background-color: rgba(255,0,0,0.3);
 }
