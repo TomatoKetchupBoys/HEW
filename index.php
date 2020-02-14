@@ -4,7 +4,7 @@ session_start();
 //関数ファイル呼び出し
 require_once "./functions/function.php";
 //configファイル呼び出し
-require_once "../config.php";
+// require_once "../config.php";
 
 // $header, $body, $footerの初期値設定
 
