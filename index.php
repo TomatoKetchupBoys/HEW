@@ -6,9 +6,9 @@ session_start();
 // require_once "../config.php";
 
 // $header, $body, $footerの初期値設定
-$header = './tpl/header/header.php';
-$body = './tpl/main/login.php';
-$footer = './tpl/footer/footer.php';
+$header = './tpl/header/login_header.php';
+$body = './tpl/main/login_main.php';
+$footer = './tpl/footer/login_footer.php';
 
 
 // // ################### ボタンアクション ##########################
