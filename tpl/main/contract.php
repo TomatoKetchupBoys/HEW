@@ -1,8 +1,8 @@
 <section id="main">
     <form action="" method="post">
-        <h1>予約</h1>
-        <p>● 駐車場の住所</p>
-        <ul>
+        <h1 class="title">予約</h1>
+        <p class="item1">● 駐車場の住所</p>
+        <ul class="menu">
             <li><select name="pref">
                 <option value="">都道府県 ▼</option>
                 <option value="北海道">北海道</option>
@@ -59,12 +59,12 @@
             <li><input type="text" name="" placeholder="番地"></li>
             <li><input type="text" name="" placeholder="部屋番号"></li>
         </ul>
-        <p>● 予約時間</p>
-        <ul>
+        <p class="item2">● 予約時間</p>
+        <ul class="set_time">
             <li><input type="text" name=""></li>
             <li><input type="text" name=""></li>
         </ul>
-        <button type="submit" value="">検索</button>
+        <button type="submit" value="" class="submit">検索</button>
     </form>
 </section>
 
