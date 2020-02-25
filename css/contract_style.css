@@ -20,7 +20,7 @@ body {
     height:100%;
 
     display: grid;
-    grid-template-rows: 12% 8% 30% 8% 30% 12%;
+    grid-template-rows: 12% 8% 35% 8% 25% 1% 8% 1%;
     grid-template-columns: 1fr;
 }
 
@@ -44,14 +44,49 @@ body {
     font-size: 50px;
     padding: 3% 0px;
 
-    border-bottom: solid rgba(112,112,112,1) 2px;
-
 }
 
 #main .menu {
-    background-color: green;
+    /* background-color: green; */
     grid-row:3 / 4;
     grid-column:1;
+
+    font-size: 30px;
+}
+#main .menu li {
+    display:flex;
+}
+#main .menu select {
+    height: 80%;
+    width: 50%;
+
+    margin: 2.5% 0px;
+    /* background-color: red; */
+    border: solid rgba(112,112,112,1) 1px;
+}
+#main .menu #siku {
+    height: 80%;
+    width: 50%;
+
+    margin: 2.5% 0px;
+    /* background-color: red; */
+    border: solid rgba(112,112,112,1) 1px;
+    border-radius: 0px;
+}
+
+#main .menu li input {
+    height: 80%;
+    width: 100%;
+
+    margin: 2.5% 0px;
+    /* background-color: red; */
+    border: solid rgba(112,112,112,1) 1px;
+    border-radius: 20px;
+
+}
+#main .menu li{
+    height: 33%;
+    /* border: solid rgba(112,112,112,1) 1px; */
 }
 
 #main .item2 {
@@ -61,22 +96,31 @@ body {
 
     font-size: 50px;
     padding: 3% 0px;
-
-    border-bottom: solid rgba(112,112,112,1) 2px;
 }
 
 #main .set_time {
-    background-color: yellow;
+    /* background-color: yellow; */
     grid-row:5 / 6;
     grid-column:1;
+
+    display: flex;
+    justify-content: space-between;
+}
+#main .set_time li{
+    height:16%;
+    width: 40%;
+    border: solid rgba(112,112,112,1) 1px;
 }
 
 #main .submit {
     background-color: orange;
-    grid-row:6 / 7;
+    grid-row:7 / 8;
     grid-column:1;
 
-    padding:10% 0px;
+    padding:0% 0px;
+
+    font-size: 50px;
+    border-radius: 20px;
 
 }
 

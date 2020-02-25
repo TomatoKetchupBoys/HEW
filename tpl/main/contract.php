@@ -54,7 +54,7 @@
                 <option value="沖縄県">沖縄県</option>
                 </select>
 
-                <input type="text" name="" placeholder="市区町村">
+                <input type="text" name="" placeholder="市区町村" id="siku">
             </li>
             <li><input type="text" name="" placeholder="番地"></li>
             <li><input type="text" name="" placeholder="部屋番号"></li>
