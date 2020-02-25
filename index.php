@@ -7,7 +7,7 @@ session_start();
 
 // $header, $body, $footerの初期値設定
 $header = './tpl/header/header.php';
-$body = './tpl/main/hogehoge1.php';
+$body = './tpl/main/contract.php';
 $footer = './tpl/footer/footer.php';
 
 
