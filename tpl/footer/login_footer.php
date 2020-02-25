@@ -1,10 +1,10 @@
 <footer>
-    <div class="contents">
-        <ul>
-            <li><button class='show'>SIGN UP</button></li>
-            <li><button class='show'>SUPPORT</button></li>
-        </ul>
-    </div>
+<div class="contents">
+    <form action="" method="post" class='show' name="form1">
+        <button type="submit" class='show' onclick="return checkForm();">SIGN UP</button>
+        <button type="submit" class='show' onclick="return checkForm();">SUPPORT</button>
+    </form>
+</div>
 </footer>
 <script>
     $(".show").hide();
