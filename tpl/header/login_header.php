@@ -18,5 +18,5 @@
     <script src="./js/function.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-    <header>
-    </header>
+<header>
+</header>
