@@ -30,6 +30,15 @@ header .contents {
     height: 50%;
     width: 100%;
 }
+/* header .contents p {
+    width: 14%;
+    border: solid red 1px;
+}
+
+header .contents img {
+    width: 14%;
+    border: solid red 1px;
+}
 
 header .contents h1 {
     font-size: 50px;
@@ -38,19 +47,33 @@ header .contents h1 {
     margin: 4% 0% 4% 4%;
 
     width: 50%;
+} */
+
+header .contents ul {
+    display: flex;
+    width: 70%;
 }
 
-header .contents #form {
-    display: flex;
-    width: 50%;
+header .contents img{
+    height: 100%;
+    width: calc(25vw / 2);
+
+}
+
+header .contents h1{
+    font-size: 50px;
+    line-height: 50px;
+    width: 71vw;
+    margin: 5% 2vw;
 }
 
 header .contents .button {
     font-size: 50px;
     line-height: 50px;
 
-    width: 25%;
-    padding: 8%;
+    width: calc(25vw / 2);
+    height: 100%;
+    padding: 4%;
 }
 
 header .contents button {
@@ -61,7 +84,8 @@ header,
 header .contents,
 header .contents h1,
 header .contents #form,
-header .contents .button
+header .contents .button,
+header .contents img
 {
     background-color: rgba(255,0,0,0.3);
 }

@@ -22,12 +22,10 @@
 <body>
     <header>
         <div class="contents">
-            <h1>Youtube</h1>
-            <form action="" method="post" id="form">
-                <button type="submit" value="" name="hogehoge1" class="button">A</button>
-                <button type="submit" value="" name="hogehoge2" class="button">B</button>
-                <button type="submit" value="" name="hogehoge3" class="button">C</button>
-                <button type="submit" value="" name="hogehoge4" class="button">D</button>
-            </form>
+            <ul>
+                <li><img src="./images/.jpg"></li>
+                <li><h1>GARAGE</h1></li>
+            </ul>
+            <button type="submit" value="" name="hogehoge4" class="button">三</button>
         </div><!-- contents -->
     </header>
