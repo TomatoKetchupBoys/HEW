@@ -1,17 +1,17 @@
 <?php
 session_start();
 //関数ファイル呼び出し
-require_once "./functions/function.php";
+// require_once "./func/function.php";
 //configファイル呼び出し
 // require_once "../config.php";
 
 // $header, $body, $footerの初期値設定
-$header = './tpl/header/login_header.php';
-$body = './tpl/main/login_main.php';
-$footer = './tpl/footer/login_footer.php';
+$header = './tpl/header/header.php';
+$body = './tpl/main/login.php';
+$footer = './tpl/footer/footer.php';
 
 
-// ################### ボタンアクション ##########################
+// // ################### ボタンアクション ##########################
 // if (isset($_GET['exhibits_button'])) {
 //     unlink('./images/tpl/*');
 //     // 商品カテゴリ一覧取得

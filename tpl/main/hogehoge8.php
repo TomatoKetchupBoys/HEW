@@ -1,10 +1,11 @@
 <section id="main">
     <h1>// ----- ----- ----- ----- -----hogehoge8----- ----- ----- ----- ----- //</h1>
-    <p .class="fit_image"><img src="https://media.giphy.com/media/eITzltRdbTdfYE301t/giphy.gif"></p>
-    <p><br>
-        ここがページ１です。<br>
-        ボタンのAとリンクしてます。
-    </p><br>
+    <?php for($i = 0; $i < 14; $i ++){ ?>
+        <p><br>
+            ここがページ８です。<br>
+            ボタンのHとリンクしてます。
+        </p><br>
+    <?php } ?>
     <h1>// ----- ----- ----- ----- -----hogehoge8----- ----- ----- ----- ----- //</h1>
 </section>
 
