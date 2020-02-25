@@ -1,0 +1,173 @@
+/* constant(safe-area-inset-top) */
+/* constant(safe-area-inset-right) */
+/* constant(safe-area-inset-bottom) */
+/* constant(safe-area-inset-left) */
+
+/* iphoneの切り欠きを避けるようにしてるやつ */
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 25vw;
+    width: 100vw;
+
+    background-color: rgba(60,60,60,1);
+    color: white;
+    /* padding-top: constant(safe-area-inset-top); */
+
+    z-index: 10000;
+}
+
+header .contents {
+    position: absolute;
+
+    display: flex;
+    justify-content: space-between;
+
+    bottom: 0px;
+    left: 0px;
+
+    height: 50%;
+    width: 100%;
+}
+
+header .contents h1 {
+    font-size: 50px;
+    line-height: 50px;
+
+    margin: 4% 0% 4% 4%;
+
+    width: 50%;
+}
+
+header .contents #form {
+    display: flex;
+    width: 50%;
+}
+
+header .contents .button {
+    font-size: 50px;
+    line-height: 50px;
+
+    width: 25%;
+    padding: 8%;
+}
+
+header .contents button {
+    color: white;
+}
+
+header,
+header .contents,
+header .contents h1,
+header .contents #form,
+header .contents .button
+{
+    background-color: rgba(255,0,0,0.3);
+}
+
+
+body{
+    background-color: rgba(70,70,70,1);
+}
+
+#main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    padding-top: 25vw;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(70,70,70,1);
+    color: white;
+    /* background-color: red; */
+
+    z-index: 0;
+}
+
+#main *{
+    font-size: 30px;
+}
+
+/* マップのサイズ変更用の */
+#gmap {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+#gmap iframe,
+#gmap object,
+#gmap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* constant(safe-area-inset-top) */
+/* constant(safe-area-inset-right) */
+/* constant(safe-area-inset-bottom) */
+/* constant(safe-area-inset-left) */
+
+/* iphoneの切り欠きを避けるようにしてるやつ */
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 25vw;
+    width: 100vw;
+
+    background-color: rgba(60,60,60,1);
+    color: white;
+    padding-bottom: constant(safe-area-inset-bottom);
+}
+
+footer .contents {
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    height: 50%;
+    width: 100%;
+}
+
+footer .contents #form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+footer .contents .button {
+    font-size: 50px;
+    line-height: 50px;
+
+    width: 15%;
+    height: 100%;
+
+    margin: 0% 5%;
+    padding: 4%;
+
+    text-align: center;
+}
+
+footer .contents button {
+    color: white;
+}
+
+
+
+footer,
+footer .contents,
+footer .contents #form,
+footer .contents .button
+{
+    background-color: rgba(0,0,255,0.3);
+}

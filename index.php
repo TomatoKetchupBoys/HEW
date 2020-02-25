@@ -8,9 +8,9 @@ require_once "./functions/function.php";
 
 // $header, $body, $footerの初期値設定
 
-$header = './tpl/header/header.php';
-$main = './tpl/main/toppage.php';
-$footer = './tpl/footer/footer.php';
+$header = './tpl/header/login_header.php';
+$main = './tpl/main/login_main.php';
+$footer = './tpl/footer/login_footer.php';
 
 // $header = './tpl/header/login_header.php';
 // $main = './tpl/main/login_main.php';
