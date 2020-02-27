@@ -1,25 +1,20 @@
 <?php
 session_start();
-//関数ファイル呼び出し
-// require_once "./func/function.php";
-//configファイル呼び出し
-// require_once "../config.php";
 
-// $header, $body, $footerの初期値設定
-$header = './tpl/header/login_header.php';
-$body = './tpl/main/login_main.php';
-$footer = './tpl/footer/login_footer.php';
+// $_POST['page']と$_POST['currentPage']の初期設定
+$_POST['page'] = 'basic';
+$_POST['currentPage'] = 'toppage';
+$_SESSION['prevPage'] = '';
 
+// mainページで利用する主処理の呼び出し
+require_once "./mainProcess.php";
 
-// // ################### ボタンアクション ##########################
-// if (isset($_GET['exhibits_button'])) {
-//     unlink('./images/tpl/*');
-//     // 商品カテゴリ一覧取得
-//     $categorys = get_product_category();
-//     require_once './tpl/login/product/exhibits.php';
-//     exit;
-//   }
+// $header, $navi, $body, $footerの初期値設定
+$header = './tpl/header/header.php';
+$navi = './tpl/navi/navi.php';
+$main = './tpl/main/toppage.php';
+$footer = './tpl/footer/footer.php';
 
-require_once $header;
-require_once $body;
-require_once $footer;
+// viewファイル呼び出し
+require_page($header, $navi, $main, $footer);
+?>
