@@ -232,5 +232,5 @@ $(function () {
             // .basicOnlyから.isHideを削除
             $('.basicOnly').removeClass('isHide');
         }
-    // );
+    );
 });
