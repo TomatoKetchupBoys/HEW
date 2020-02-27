@@ -23,8 +23,8 @@ if($_POST['page'] == 'simple'){
     $_SESSION['prevPage'] = $_SESSION['currentPage'];
 }
 
-// .backクリック時
-if($_POST['page'] == 'back'){
+// .backまたは.loginクリック時
+if($_POST['page'] == 'back' || $_POST['page'] == 'login'){
     // $_SESSION['currentPage']の更新
     $_SESSION['currentPage'] = $_SESSION['prevPage'];
 
@@ -38,14 +38,6 @@ if($_POST['page'] == 'back'){
 if($_POST['page'] == 'login'){
     // 送られてきた各値を$_SESSIONに格納
     set_session('perm');
-    
-    // $_SESSION['currentPage']の更新
-    $_SESSION['currentPage'] = $_SESSION['prevPage'];
-
-    // jsonの用意
-    $array = array("page" => $_SESSION['prevPage']);
-    $jsonStr = json_encode($array);
-    echo $jsonStr;
 }
 
 // .formクリック時
@@ -57,5 +49,11 @@ if($_POST['page'] == 'form'){
 elseif(isset($_SESSION['temp'])){
     // $_SESSION['temp']の初期化
     unset($_SESSION['temp']);
+}
+
+// .logoutクリック時
+if($_POST['page'] == 'logout'){
+    // $_SESSION['perm']の初期化
+    unset($_SESSION['perm']);
 }
 ?>

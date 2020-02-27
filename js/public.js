@@ -105,7 +105,7 @@ $(function () {
             .fail(function(data){
             });
 
-            // .basicOnlyに.isHideを付与
+            // .basicOnlyから.isHideを削除
             $('.basicOnly').removeClass('isHide');
         }
     );
@@ -193,50 +193,44 @@ $(function () {
             })
             .fail(function(data){
             });
+            
+            // .basicOnlyから.isHideを削除
+            $('.basicOnly').removeClass('isHide');
         }
     );
 
-    // // .loginクリック時
-    // $(document).on('click', '.login', function(){
-    //         // nextPageの設定
-    //         let nextPage = getPage(this);
-
-    //         // formの特定
-    //         let formId = $(this).parents('form');
-
-    //         // form内の各input要素のname属性とvalue値の取得
-    //         let formVal = getForm(formId);
+    // .logoutクリック時
+    $(document).on('click', '.logout', function(){
+            // nextPageの設定
+            let nextPage = getPage(this);
             
-    //         // ajax処理
-    //         $.when(
-    //             // mainProcessの処理の実行
-    //             $.post({
-    //                 url: './mainProcess.php',
-    //                 dataType: 'html',
-    //                 data: {
-    //                     'page': 'login',
-    //                     formVal
-    //                     },
-    //                 timeout: 10000
-    //             }),
-    //             // 該当するmainを読み込む
-    //             $.get({
-    //                 url: 'tpl/main/' + nextPage + '.php',
-    //                 dataType: 'html',
-    //                 timeout: 10000
-    //             })
-    //         )
-    //         .done(function(data1, data2){
-    //             // main部分を入れ替える
-    //             $('#ajaxArea').html(data2[0]);
-    //         })
-    //         .fail(function(data){
-    //         });
-
-    //         // nextPageがtoppageの場合、.basicOnlyから.isHideを削除
-    //         if(nextPage == 'toppage'){
-    //             $('.basicOnly').removeClass('isHide');
-    //         }
-    //     }
+            // ajax処理
+            $.when(
+                // mainProcessの処理の実行
+                $.post({
+                    url: './mainProcess.php',
+                    dataType: 'html',
+                    data: {
+                        'page': 'logout'
+                        },
+                    timeout: 10000
+                }),
+                // 該当するmainを読み込む
+                $.get({
+                    url: 'tpl/main/' + nextPage + '.php',
+                    dataType: 'html',
+                    timeout: 10000
+                })
+            )
+            .done(function(data1, data2){
+                // main部分を入れ替える
+                $('#ajaxArea').html(data2[0]);
+            })
+            .fail(function(data){
+            });
+            
+            // .basicOnlyから.isHideを削除
+            $('.basicOnly').removeClass('isHide');
+        }
     // );
 });
