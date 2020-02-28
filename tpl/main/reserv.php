@@ -1,8 +1,9 @@
 
 <!-- bootstrap-datepickerを読み込む -->
 <link rel="stylesheet" type="text/css" href="/HEW/bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker.min.css">
-    <script type="text/javascript" src="/HEW/bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.min.js"></script>
-    <script type="text/javascript" src="/HEW/bootstrap-datepicker-1.9.0-dist/locales/bootstrap-datepicker.ja.min.js"></script>
+<script type="text/javascript" src="/HEW/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/HEW/bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="/HEW/bootstrap-datepicker-1.9.0-dist/locales/bootstrap-datepicker.ja.min.js"></script>
 
     <!-- bootstrap-datepickerのjavascriptコード -->
 <script>
@@ -18,7 +19,7 @@
 
         <h3>・駐車場の住所</h3>
 
-    <form action="">
+    <form id="search_result">
         <select name="prefectures">
         <option value="都道府県">都道府県</option>
         <option value="北海道">北海道</option>
@@ -71,7 +72,9 @@
         </select>
 
         <input type="text" placeholder="市区町村">
+
     </div>
+
     <div class="time">
         <h3>予約日時・時間</h3>
 
@@ -88,7 +91,6 @@
             </div>
         </div>
     
-
         <p><select name="start_time">
         <option value="">時間を指定</option>
         <option value="1:">1時</option>
@@ -116,6 +118,7 @@
         <option value="23:">23時</option>
         <option value="24:">24時</option>
         </select>
+
         <select name="start_time">
         <option value="">分を指定</option>
         <option value="0">0分</option>
@@ -161,6 +164,7 @@
         <option value="23:">23時</option>
         <option value="24:">24時</option>
         </select>
+
         <select name="end_time">
         <option value="">分を指定</option>
         <option value="0">0分</option>
@@ -176,7 +180,9 @@
         <option value="50">50分</option>
         <option value="55">55分</option>
         </select></p>
-        <button name="search">検索</button>
+
+        <button class="search">検索</button>
+
     </form>
     </div>
 </div>
