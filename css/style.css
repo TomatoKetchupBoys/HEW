@@ -1,25 +1,4 @@
-body {
-    padding-top: 20vh;
-    height: 100vh;
-    width: 100vw;
-
-    background-color: white;
-}
-#main h1 {
-    margin: 2vh;
-}
-#main img {
-    width: 40%;
-}
-#main form {
-    margin-top: 1vh;
-}
-#main input {
-    border: solid #AAA 1px;
-    border-radius: 40px;
-
-    height: 80px;
-    width: 400px;
-
-    margin-top: 0.5vh;
+.basic, .simple{
+    border: solid 1px black;
+    cursor: pointer;
 }
