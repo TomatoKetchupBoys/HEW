@@ -3,7 +3,8 @@
 
 <h1>結果</h1>
 <div id="map"></div>
-<p>条件を変える</p>
+<button>条件を変える</button>
+<a href=""><p>TIMES梅田東梅田東通り前 大阪市北区梅田1-1-1</p></a>
 
 <script>
     function initMap() {
@@ -14,7 +15,8 @@
         });
         var marker = new google.maps.Marker({
           position: latlng,
-          map: map
+          map: map,
+          animation: google.maps.Animation.DROP
         });
       }
 </script>
