@@ -7,3 +7,4 @@
     <p>ご確認ください</p>
 </div>
 <button type="button" class="basic toToppage">TOPページへ</button>
+<button type="button" class="back">引き続きお手続きをする</button>

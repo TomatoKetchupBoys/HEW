@@ -8,30 +8,13 @@ function require_page($header, $navi, $main, $footer){
     // GETで送られてきた場合
     if(isset($_GET['currentPage'])){
         $main = './tpl/main/'.$_GET['currentPage'].'.php';
-    
-        // ファイル呼び出し
-        require_once $header;
-        require_once $navi;
-        require_once $main;
-        require_once $footer;
-
-        return 0;
     }
 
     // POSTで送られてきた場合
     if(isset($_POST['currentPage'])){
         $main = './tpl/main/'.$_POST['currentPage'].'.php';
-    
-        // ファイル呼び出し
-        require_once $header;
-        require_once $navi;
-        require_once $main;
-        require_once $footer;
-
-        return 0;
     }
 
-    // 最初にサイトに訪れた場合
     // ファイル呼び出し
     require_once $header;
     require_once $navi;
