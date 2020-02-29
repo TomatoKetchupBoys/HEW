@@ -3,7 +3,7 @@
 // 機能：viewファイルを呼び出す（一般ページの場合）
 // 引数：header.phpパス、navi.phpパス、main.phpパス、footer.phpパス
 // #############################################
-function require_page($header, $navi, $main, $footer){
+function require_page($header, $side, $navi, $main, $footer){
     // 表示ページの判断
     // GETで送られてきた場合
     if(isset($_GET['page'])){
@@ -17,6 +17,7 @@ function require_page($header, $navi, $main, $footer){
 
     // ファイル呼び出し
     require_once $header;
+    require_once $side;
     require_once $navi;
     require_once $main;
     require_once $footer;

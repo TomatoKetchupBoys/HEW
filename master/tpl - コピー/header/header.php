@@ -14,4 +14,10 @@
     <title>管理画面</title>
 </head>
 <body>
-  <div class="wrapper ">
+<section class="wrapper">
+    <header>
+        <div class="logo">
+        <a href="http://www.creative-tim.com" class="simple-text logo-normal">GARAGE管理画面</a>
+        </div>
+        <h1>管理画面</h1>
+    </header>
