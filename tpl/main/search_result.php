@@ -20,5 +20,5 @@
         });
       }
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmwWle_A_hFmyC3R96-BWsmXlc-I_FeyA&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=#######"></script>
 
