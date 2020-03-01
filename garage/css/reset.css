@@ -11,6 +11,12 @@ html{
 }
 body{
 	font-size: 1.6em;
+	top: 0px;
+	left: 0px;
+	width: 407px;
+	height: 812px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	opacity: 1;
 }
 li{
 	list-style-type:none;/*マーカーの非表示*/

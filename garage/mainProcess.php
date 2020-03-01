@@ -27,6 +27,11 @@ if($_POST['page'] == 'simple'){
 if($_POST['page'] == 'back' || $_POST['page'] == 'login'){
     // $_SESSION['currentPage']の更新
     $_SESSION['currentPage'] = $_SESSION['prevPage'];
+
+    // jsonの用意
+    $array = array("page" => $_SESSION['prevPage']);
+    $jsonStr = json_encode($array);
+    echo $jsonStr;
 }
 
 // .loginクリック時

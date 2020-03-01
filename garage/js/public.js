@@ -26,6 +26,9 @@ $(function () {
             .done(function(data1, data2){
                 // main部分を入れ替える
                 $('#ajaxArea').html(data2[0]);
+                if(nextPage == 'toppage'){
+                    slicker();
+                }
             })
             .fail(function(data){
             });
@@ -35,6 +38,8 @@ $(function () {
         }
     );
 
+
+    
     // .simpleクリック時
     $(document).on('click', '.simple', function(){
             // nextPageの設定
@@ -79,8 +84,11 @@ $(function () {
             $.when(
                 // mainProcessの処理の実行
                 $.post({
-                    url: './json/json.php',
+                    url: './mainProcess.php',
                     dataType: 'json',
+                    data: {
+                        'page': 'back'
+                    },
                     timeout: 10000,
                     async: false
                 })
@@ -98,6 +106,9 @@ $(function () {
             .done(function(data1, data2){
                 // main部分を入れ替える
                 $('#ajaxArea').html(data2[0]);
+                if(nextPage == 'toppage'){
+                    slicker();
+                }
             })
             .fail(function(data){
             });
@@ -142,6 +153,9 @@ $(function () {
             .done(function(data1, data2){
                 // main部分を入れ替える
                 $('#ajaxArea').html(data2[0]);
+                if(nextPage == 'toppage'){
+                    slicker();
+                }
             })
             .fail(function(data){
             });
@@ -166,34 +180,30 @@ $(function () {
                 // mainProcessの処理の実行
                 $.post({
                     url: './mainProcess.php',
-                    dataType: 'html',
+                    dataType: 'json',
                     data: {
                         'page': 'login',
                         'array': formVal
                         },
                     timeout: 10000
-                }),
-                $.ajax({
-                    url: './json/json.php',
-                    dataType: 'json',
-                    timeout: 10000,
-                    async: false
                 })
                 .done(function(data){
+                    // nextPageの再設定
                     nextPage = data.page;
-                })
-                .fail(function(data){
                 }),
                 // 該当するmainを読み込む
-                $.get({
+                $.ajax({
                     url: './tpl/main/' + nextPage + '.php',
                     dataType: 'html',
                     timeout: 10000
                 })
             )
-            .done(function(data1, data2, data3){
+            .done(function(data1, data2){
                 // main部分を入れ替える
-                $('#ajaxArea').html(data3[0]);
+                $('#ajaxArea').html(data2[0]);
+                if(nextPage == 'toppage'){
+                    slicker();
+                }
             })
             .fail(function(data){
             });
@@ -229,6 +239,9 @@ $(function () {
             .done(function(data1, data2){
                 // main部分を入れ替える
                 $('#ajaxArea').html(data2[0]);
+                if(nextPage == 'toppage'){
+                    slicker();
+                }   
             })
             .fail(function(data){
             });

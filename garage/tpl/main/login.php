@@ -25,7 +25,7 @@ session_start();
             ></td>
         </tr>
         <tr>
-            <td colspan="2"><button type="button" class="login">ログイン</button></td>
+            <td colspan="2"><button type="button" class="login toToppage">ログイン</button></td>
         </tr>
     </table>
     <input type="hidden" name="currentPage" value="toppage">
