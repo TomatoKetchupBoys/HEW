@@ -11,7 +11,7 @@ session_start();
     <table>
         <tr>
             <th>名前</th>
-            <td><input type="text" name="name" required 
+            <td><input type="text" name="name" required
                 <?php if(isset($_SESSION['temp']['name'])){ ?>
                     value="<?php echo $_SESSION['temp']['name']; ?>"
                 <?php } ?>
@@ -19,7 +19,7 @@ session_start();
         </tr>
         <tr>
             <th>電話番号</th>
-            <td><input type="tel" name="tel" pattern="^\d{10,11}" required 
+            <td><input type="tel" name="tel" pattern="^\d{10,11}" required
                 <?php if(isset($_SESSION['temp']['tel'])){ ?>
                     value="<?php echo $_SESSION['temp']['tel']; ?>"
                 <?php } ?>
@@ -27,7 +27,7 @@ session_start();
         </tr>
         <tr>
             <th>メールアドレス</th>
-            <td><input type="email" name="email" patern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" required 
+            <td><input type="email" name="email" patern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" required
                 <?php if(isset($_SESSION['temp']['email'])){ ?>
                     value="<?php echo $_SESSION['temp']['email']; ?>"
                 <?php } ?>
@@ -35,7 +35,7 @@ session_start();
         </tr>
         <tr>
             <th>パスワード</th>
-            <td><input type="password" name="password" patern="^[\w-+.]{8,}" required 
+            <td><input type="password" name="password" patern="^[\w-+.]{8,}" required
                 <?php if(isset($_SESSION['temp']['password'])){ ?>
                     value="<?php echo $_SESSION['temp']['password']; ?>"
                 <?php } ?>

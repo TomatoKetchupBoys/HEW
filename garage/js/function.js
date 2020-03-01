@@ -14,37 +14,32 @@ function getPage(val){
 
 
 // #############################################
-// 機能：mainを入れ替える一連のajax処理を行う
+// 機能：slickを呼び出す関数
 // 引数：
 // 戻値：
 // #############################################
-function ajaxProcess(formId){
-    $.when(
-        // mainProcessの処理の実行
-        $.post({
-            url: './mainProcess.php',
-            dataType: 'html',
-            data: {
-                'page': 'basic',
-                'currentPage': nextPage
-            },
-            timeout: 10000
-        }),
-        // 該当するmainを読み込む
-        $.get({
-            url: 'tpl/main/' + nextPage + '.php',
-            dataType: 'html',
-            timeout: 10000
-        })
-    )
-    .done(function(data1, data2){
-        // main部分を入れ替える
-        $('#ajaxArea').html(data2[0]);
-    })
-    .fail(function(data){
+function slicker(formId){
+    $('.drawer').drawer();
+    
+    $('.slider').slick({
+        dots:true,
     });
+    $('.front').on('touchend',function(){
+        $('.front').removeClass('turn-4');
+        $('.reverse').removeClass('turn-3');
+        $('.front').addClass('turn-1');
+        $('.reverse').addClass('turn-2');
+        console.log(0);
+    })
+    $('.reverse').on('touchend',function(){
+        $('.front').removeClass('turn-1');
+        $('.reverse').removeClass('turn-2');
+        $('.front').addClass('turn-4');
+        $('.reverse').addClass('turn-3');
+        console.log(0);
+    })
 
-    return formVal;
+    return 0;
 }
 
 
