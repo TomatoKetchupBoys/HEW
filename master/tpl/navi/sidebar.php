@@ -4,26 +4,26 @@
 
         Tip 2: you can also add an image using data-image tag
     -->
-      <div class="logo"><a href="" class="simple-text logo-normal">
+      <div class="logo"><a href="./index.php" class="simple-text logo-normal">
           ON TIME
         </a></div>
       <div class="sidebar-wrapper">
         <ul class="nav">
             <li>メタテーブル
                 <li class="nav-item active  ">
-                    <a class="nav-link" href="./refarence_time.php">
+                    <a class="nav-link" href="./idex.php?currentpage=refarence_time">
                         <i class="material-icons">dashboard</i>
                         <p>基準時間</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./intervals.php">
+                    <a class="nav-link" href="./index.php?currentpage=intervals">
                         <i class="material-icons">person</i>
                         <p>繰り返し間隔</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./usage_statuses.php">
+                    <a class="nav-link" href="./index.php?currentpage=usage_statuses">
                         <i class="material-icons">content_paste</i>
                         <p>利用状態</p>
                     </a>
@@ -31,13 +31,13 @@
             </li>
             <li>マスターテーブル
                 <li class="nav-item ">
-                    <a class="nav-link" href="./parking.php">
+                    <a class="nav-link" href="./index.php?currentpage=parking">
                         <i class="material-icons">library_books</i>
                         <p>駐車場</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./parking_positions">
+                    <a class="nav-link" href="./index.php?currentpage=parking_positions">
                         <i class="material-icons">bubble_chart</i>
                         <p>駐車位置</p>
                     </a>
@@ -45,25 +45,25 @@
             </li>
             <li>ユーザーテーブル
                 <li class="nav-item ">
-                    <a class="nav-link" href="./members.php">
+                    <a class="nav-link" href="./index.php?currentpage=members">
                         <i class="material-icons">location_ons</i>
                         <p>会員アカウント</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./guests.php">
+                    <a class="nav-link" href="./index.php?currentpage=guests">
                         <i class="material-icons">notifications</i>
                         <p>ゲストアカウント</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./partners.php">
+                    <a class="nav-link" href="./index.php?currentpage=partners">
                         <i class="material-icons">language</i>
                         <p>提携先アカウント</p>
                     </a>
                 </li>
                 <li class="nav-item active-pro ">
-                    <a class="nav-link" href="./partners_children.php">
+                    <a class="nav-link" href="./index.php?currentpage=partners_children">
                         <i class="material-icons">unarchive</i>
                         <p>提携先子アカウント</p>
                     </a>
