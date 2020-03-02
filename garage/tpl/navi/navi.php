@@ -6,9 +6,9 @@
     <nav class="basicOnly drawer-nav">
     <div class="drawer-menu">
         <dl>
-            <dt class="drawer-brand"><img src="images/users/00001/account.jpg" alt=""></dt>
-            <dd class="drawer-menu-item">＄ユーザーネーム</dd>
-            <dd class="drawer-menu-item">＄ユーザーのメアド</dd>
+            <dt class="drawer-brand"><img src="images/users/0000001/account.jpg" alt="ユーザーアイコン"></dt>
+            <dd class="drawer-menu-item">テストユーザー</dd>
+            <dd class="drawer-menu-item">test_user@gmail.com</dd>
         </dl>
         <hr>
         <ul>
