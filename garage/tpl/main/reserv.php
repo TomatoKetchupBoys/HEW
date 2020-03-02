@@ -1,4 +1,4 @@
-
+<br><br><br><br><br><br><br><br>
 <!-- bootstrap-datepickerを読み込む -->
 <link rel="stylesheet" type="text/css" href="/HEW/bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker.min.css">
 <script type="text/javascript" src="/HEW/js/jquery-3.3.1.min.js"></script>

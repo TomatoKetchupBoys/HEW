@@ -9,4 +9,3 @@ $array = array("page" => $_SESSION['prevPage']);
 header("Content-Type: application/json; charset=utf-8");
 $jsonStr = json_encode($array);
 echo $jsonStr;
-?>
