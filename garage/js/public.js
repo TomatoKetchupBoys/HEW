@@ -250,4 +250,47 @@ $(function () {
             $('.basicOnly').removeClass('isHide');
         }
     );
+
+    // .searchクリック時
+    $(document).on('click', '.search', function(){
+        // nextPageの設定
+        let nextPage = 'search_result';
+
+        // formの特定
+        let formId = $(this).parents('form');
+
+        // form内の各input要素のname属性とvalue値の取得（jsonオブジェクト化）
+        let formVal = getForm(formId);
+        formVal = JSON.stringify(formVal);
+        formVal = $.parseJSON(formVal);
+        
+        // ajax処理
+        $.when(
+            // mainProcessの処理の実行
+            $.post({
+                url: './mainProcess.php',
+                dataType: 'html',
+                data: {
+                    'page': 'search',
+                    'array': formVal
+                    },
+                timeout: 10000
+            }),
+            // 該当するmainを読み込む
+            $.ajax({
+                url: './tpl/main/' + nextPage + '.php',
+                dataType: 'html',
+                timeout: 10000
+            })
+        )
+        .done(function(data1, data2){
+            // main部分を入れ替える
+            $('#ajaxArea').html(data2[0]);
+        })
+        .fail(function(data){
+        });
+    }
+);
+
 });
+
