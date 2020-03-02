@@ -7,7 +7,7 @@ session_start();
 <h2>登録確認</h2>
 <button type="button" class="back">前ページへ戻る</button>
 <form id="forRegist">
-    <table>
+    <table border=1>
         <tr>
             <th>名前</th>
             <td><input type="text" name="name" value="<?php echo $_SESSION['temp']['name']; ?>" readonly></td>

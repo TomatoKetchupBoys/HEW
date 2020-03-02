@@ -30,9 +30,9 @@ if(!isset($_SESSION)){
 session_start();
 }
 ?>
-
-
-<form FOR_REGIST>
+<br><br>
+<!-- むりやり改行してます -->
+<form id="forRegist">
 <h1><img src="./images/garage/simple_logo.jpg" alt="ロゴマーク"></h1>
 <h2>新規会員登録</h2>
 <button type="button" class="back">前ページへ戻る</button>

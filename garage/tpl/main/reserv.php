@@ -86,11 +86,11 @@
                 <div class="col-5">
                     <!-- ここにカレンダー表示用のテキストボックスを追加 -->
                     <input type="text" class="form-control" id="date_sample">
-        
+
                 </div>
             </div>
         </div>
-    
+
         <p><select name="start_time">
         <option value="">時間を指定</option>
         <option value="1:">1時</option>
