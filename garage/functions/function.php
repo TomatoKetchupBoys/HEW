@@ -4,11 +4,12 @@
 // 引数：header.phpパス、navi.phpパス、main.phpパス、footer.phpパス
 // #############################################
 function require_page($header, $navi, $main, $footer){
-    // 表示ページの判断
+    // 関数の説明：indexに送られてきた情報（get or post）で次に表示する画面を指定する
+
     // GETで送られてきた場合
     if(isset($_GET['currentPage'])){
         $main = './tpl/main/'.$_GET['currentPage'].'.php';
-    
+
         // ファイル呼び出し
         require_once $header;
         require_once $navi;
@@ -21,7 +22,9 @@ function require_page($header, $navi, $main, $footer){
     // POSTで送られてきた場合
     if(isset($_POST['currentPage'])){
         $main = './tpl/main/'.$_POST['currentPage'].'.php';
-    
+
+        // var_dump($_POST['curentPage']);
+
         // ファイル呼び出し
         require_once $header;
         require_once $navi;

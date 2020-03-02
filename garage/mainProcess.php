@@ -8,11 +8,12 @@ session_start();
 //関数ファイル呼び出し
 require_once "./functions/function.php";
 //configファイル呼び出し
-require_once "../config.php";
+// require_once "../config.php";
 
 
 
 // ---------------- ボタンアクション系 ---------------- //
+// ボタンタグについてる
 
 // .basicクリック時
 if($_POST['page'] == 'basic'){
