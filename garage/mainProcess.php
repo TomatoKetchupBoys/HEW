@@ -8,8 +8,11 @@ session_start();
 //関数ファイル呼び出し
 require_once "./functions/function.php";
 //configファイル呼び出し
-// require_once "../config.php";
+require_once "../config.php";
 
+
+
+// ---------------- ボタンアクション系 ---------------- //
 
 // .basicクリック時
 if($_POST['page'] == 'basic'){
@@ -23,8 +26,8 @@ if($_POST['page'] == 'simple'){
     $_SESSION['prevPage'] = $_SESSION['currentPage'];
 }
 
-// .backまたは.loginクリック時
-if($_POST['page'] == 'back' || $_POST['page'] == 'login'){
+// .backクリック時
+if($_POST['page'] == 'back'){
     // $_SESSION['currentPage']の更新
     $_SESSION['currentPage'] = $_SESSION['prevPage'];
 
@@ -36,6 +39,14 @@ if($_POST['page'] == 'back' || $_POST['page'] == 'login'){
 
 // .loginクリック時
 if($_POST['page'] == 'login'){
+    // $_SESSION['currentPage']の更新
+    $_SESSION['currentPage'] = $_SESSION['prevPage'];
+
+    // jsonの用意
+    $array = array("page" => $_SESSION['prevPage']);
+    $jsonStr = json_encode($array);
+    echo $jsonStr;
+
     // 送られてきた各値を$_SESSIONに格納
     set_session('perm');
 }
@@ -45,7 +56,8 @@ if($_POST['page'] == 'form'){
     // 送られてきた各値を$_SESSIONに格納
     set_session('temp');
 }
-// .form以外クリック時、かつ$_SESSION['temp']がある時
+
+// .form以外クリック時、不明な'temp'がある時
 elseif(isset($_SESSION['temp'])){
     // $_SESSION['temp']の初期化
     unset($_SESSION['temp']);
@@ -56,4 +68,3 @@ if($_POST['page'] == 'logout'){
     // $_SESSION['perm']の初期化
     unset($_SESSION['perm']);
 }
-?>
