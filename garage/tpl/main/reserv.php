@@ -187,7 +187,7 @@
         <!-- jquery読み込む -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- google map api -->
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuEn2XVwvjEUqlhcSa2fzCFgV3MtBhpBY&libraries=places"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=&libraries=places"></script>
 
     <button class="search">登録</button>
 
