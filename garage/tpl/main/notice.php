@@ -34,7 +34,7 @@ $db_select_result_of_important_news = [
 
 <br><br>
 <hr><hr>
-<p>重要なお知らせ</p>
+<p>大切なお知らせ</p>
 <hr><hr>
 <ul>
     <?php foreach($db_select_result_of_important_news as $news): ?>
