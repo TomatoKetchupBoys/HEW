@@ -10,20 +10,20 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
             <li>メタテーブル
-                <li class="nav-item active  ">
-                    <a class="nav-link" href="./index.php?currentPage=refarence_time">
+                <li class="nav-item">
+                    <a class="nav-link" href="./refarence_time.php">
                         <i class="material-icons">dashboard</i>
                         <p>基準時間</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./index.php?currentPage=intervals">
+                    <a class="nav-link" href="./repetition.php">
                         <i class="material-icons">person</i>
                         <p>繰り返し間隔</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./index.php?currentPage=usage_statuses">
+                    <a class="nav-link" href="./usage_statuses.php">
                         <i class="material-icons">content_paste</i>
                         <p>利用状態</p>
                     </a>
@@ -31,13 +31,13 @@
             </li>
             <li>マスターテーブル
                 <li class="nav-item ">
-                    <a class="nav-link" href="./index.php?currentPage=parking">
+                    <a class="nav-link" href="./parking.php">
                         <i class="material-icons">library_books</i>
                         <p>駐車場</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./index.php?currentPage=parking_positions">
+                    <a class="nav-link" href="./parking_positions.php">
                         <i class="material-icons">bubble_chart</i>
                         <p>駐車位置</p>
                     </a>
@@ -45,25 +45,25 @@
             </li>
             <li>ユーザーテーブル
                 <li class="nav-item ">
-                    <a class="nav-link" href="./index.php?currentPage=members">
+                    <a class="nav-link" href="./members.php">
                         <i class="material-icons">location_ons</i>
                         <p>会員アカウント</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./index.php?currentPage=guests">
+                    <a class="nav-link" href="./guests.php">
                         <i class="material-icons">notifications</i>
                         <p>ゲストアカウント</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./index.php?currentPage=partners">
+                    <a class="nav-link" href="./partners.php">
                         <i class="material-icons">language</i>
                         <p>提携先アカウント</p>
                     </a>
                 </li>
                 <li class="nav-item active-pro ">
-                    <a class="nav-link" href="./index.php?currentPage=partners_children">
+                    <a class="nav-link" href="./partners_children.php">
                         <i class="material-icons">unarchive</i>
                         <p>提携先子アカウント</p>
                     </a>
