@@ -29,4 +29,5 @@ $(function() {
         $('.reverse').addClass('turn-3');
         console.log(0);
     })
+    
 });

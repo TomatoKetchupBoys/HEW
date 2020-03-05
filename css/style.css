@@ -2,6 +2,7 @@
 html{
     height:0 auto;
     height:100%;
+    
 }
 body{
     height:100%;
@@ -10,6 +11,7 @@ body{
 
     cursor: pointer;
 }
+
 #ajaxArea{
     width:100vw;
     height:70vh;
@@ -219,12 +221,14 @@ article{
 form{
     text-align: center;
     widows: 100%;
-    height:100%;
+    height:120vh;
     position:relative;
     justify-content: center;
     margin: 0 auto;
     padding: 0 auto;
-    top:10em;
+    background: #FFFFAF;
+    padding-top: 10em;
+    z-index:999;
 }
 table{
     width:100%;
@@ -238,7 +242,6 @@ table input{
     height: 2.5em;
     font-size: 30px;
     border: 1px solid rgb(102, 102, 102);
-    border-radius: 0.5em;
     width:80%;
 }
 table tr{
@@ -288,23 +291,29 @@ th,td {
 	width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
+    border-bottom: 1px solid rgb(102, 102, 102);
 }
 
-.cp_iptxt input[type='text'] {
+.cp_iptxt input[type='text'],
+.cp_iptxt input[type='tel'],
+.cp_iptxt input[type='email'],
+.cp_iptxt input[type='password'] {
 	font: 1em sans-serif;
 	box-sizing: border-box;
 	width: 100%;
 	letter-spacing: 1px;
-	padding-left: 4em;
+    padding-left: 4em;
 }
-.cp_iptxt input[type='text']:focus {
+.cp_iptxt input[type='text']:focus,
+.cp_iptxt input[type='tel']:focus,
+.cp_iptxt input[type='email']:focus,
+.cp_iptxt input[type='password']:focus {
 	outline: none;
 }
 .ef {
 	padding: 4px 0;
     border: 0;
-	border-bottom: 1px solid #1b2538;
-	background-color: transparent;
+    background-color: transparent;
 }
 .ef ~ .focus_line {
 	position: absolute;
@@ -329,7 +338,7 @@ th,td {
 	width: 100%;
 	transition: 0.3s;
 	letter-spacing: 0.5px;
-	color: #aaaaaa;
+	color: #707070;
 }
 .ef:focus ~ label, .cp_iptxt.ef ~ label {
 	font-size: 0.5em;
@@ -400,3 +409,54 @@ th,td {
 .result-view p{
     font-size: 3rem;
 }
+
+/* -------------------------------------新規登録画面 --------------------------------------------------*/
+.main-container{
+    width:80%;
+    margin: 0 auto;
+    padding: 0 auto;
+    height:100vh;
+}
+.main-container img{
+    width:10%;
+    margin-top: 5rem;
+}
+.main-container h1:after{
+    content:".inc";
+    font-size: 3rem;
+    position:relative;
+    top:-2rem;
+}
+.main-container ul{
+    display: flex;
+    width:100%;
+    margin-top: 3em;
+    line-height: 
+}
+.main-container td{
+    line-height: 1em;
+}
+.main-container li{
+    margin: 0 auto;
+    padding: 0 auto;
+    border-bottom: 1px solid #000;
+}
+.main-container button{
+    font-size: 1em;
+    line-height: 2.5em;
+    color: white;
+    border-radius: 1em;
+    background: rgb(48, 53, 133);
+    width:100%;
+    margin-top: 5rem;
+}
+.main-container table button .back{
+
+    background: rgb(141, 49, 49);
+}
+.main-container p{
+    margin-top: 0.5em;
+}
+
+
+
