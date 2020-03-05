@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 // 定数
 const HOST = 'localhost';
 const DB_NAME = 'buymytoys';
@@ -8,3 +9,10 @@ const DB_PASS = 'root';
 
 const FOR_REGIST = '';
 
+=======
+// DB接続用のconstとかをここで設定
+// gitにそのまま載せるわけにいかないので、外のconfigに飛ばしてます
+// gitからダウンロードして使う場合は、ここを適宜変更してください
+require_once './../../test_config.php';
+?>
+>>>>>>> origin
