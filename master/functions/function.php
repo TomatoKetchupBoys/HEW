@@ -70,45 +70,66 @@ function sql_select($sql){
         $row[] = $to_array;
     }
 
+    // データベース切断
+    mysqli_close($cn);
+
     return $row;
 }
 
 
+// #############################################
+// 機能：mySQLに対してINSERTする
+// 引数：INSERT文
+// #############################################
+function sql_insert($sql){
+    // データベース接続
+    $cn = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);
+    mysqli_set_charset($cn,'utf8');
+
+    // sqlの実行
+    mysqli_query($cn,$sql);
+
+    // データベース切断
+    mysqli_close($cn);
+
+    return 0;
+}
 
 
+// #############################################
+// 機能：mySQLに対してUPDATEする
+// 引数：UPDATE文
+// #############################################
+function sql_update($sql){
+    // データベース接続
+    $cn = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);
+    mysqli_set_charset($cn,'utf8');
+
+    // sqlの実行
+    mysqli_query($cn,$sql);
+
+    // データベース切断
+    mysqli_close($cn);
+
+    return 0;
+}
 
 
+// #############################################
+// 機能：mySQLに対してDELETEする
+// 引数：DELETE文
+// #############################################
+function sql_delete($sql){
+    // データベース接続
+    $cn = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);
+    mysqli_set_charset($cn,'utf8');
 
+    // sqlの実行
+    mysqli_query($cn,$sql);
 
+    // データベース切断
+    mysqli_close($cn);
 
-
-
-
-
-    // sql文作成
-    // $sql = "SELECT ";
-    // $flg = TRUE;
-    // foreach($columns as $value){
-    //     if($flg){
-    //         $sql += $value;
-    //         $cnt = FALSE;
-    //     }
-    //     $sql += ",".$value;
-    // }
-    // $sql += " FROM ".$tableName;
-    // if(isset($forWhere)){
-    //     $sql += " WHERE ";
-    //     $flg = TRUE;
-    //     foreach($forWhere as $key => $value){
-    //         if($flg){
-    //             $sql += $key." == ".$value;
-    //             $cnt = FALSE;
-    //         }
-    //         $sql += " AND ";
-    //         $sql += $key." == ".$value;
-    //     }
-    // }
-    // $sql += ";";
-
-
+    return 0;
+}
 ?>
