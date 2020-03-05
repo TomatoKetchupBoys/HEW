@@ -288,7 +288,7 @@ th,td {
 
 .cp_iptxt {
 	position: relative;
-	width: 100%;
+    width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
     border-bottom: 1px solid rgb(102, 102, 102);
@@ -302,7 +302,7 @@ th,td {
 	box-sizing: border-box;
 	width: 100%;
 	letter-spacing: 1px;
-    padding-left: 4em;
+    padding-left: 6em;
 }
 .cp_iptxt input[type='text']:focus,
 .cp_iptxt input[type='tel']:focus,
@@ -333,7 +333,7 @@ th,td {
     position: absolute;
     text-align: left;
 	z-index: -1;
-	top: 4px;
+	top: 0.75em;
 	left: 0;
 	width: 100%;
 	transition: 0.3s;
@@ -458,5 +458,7 @@ th,td {
     margin-top: 0.5em;
 }
 
-
+.main-container button .left{
+    padding-left: 5rem;
+}
 

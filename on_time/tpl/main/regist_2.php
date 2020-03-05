@@ -8,29 +8,8 @@ session_start();
 <h2>新規登録</h2>
 <p>2/2</p>
     <!-- ここにクレジット情報登録の項目 -->
-    <select name="cardExpirationMonth">
-    <option value="1" selected="selected">01</option>
-    <option value="2">02</option>
-    <option value="3">03</option>
-    <option value="4">04</option>
-    <option value="5">05</option>
-    <option value="6">06</option>
-    <option value="7">07</option>
-    <option value="8">08</option>
-    <option value="9">09</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-</select>
-    <select name="cardExpirationYear">
-    <option value="2015" selected="selected">2020</option>
-    <option value="2021">2021</option>
-    <option value="2022">2022</option>
-    <option value="2023">2023</option>
-    <option value="2024">2024</option>
-    <option value="2025">2025</option>
-    <option value="2026">2026</option>
-    </select>
+
+
     <input type="tel" name="securityNumber" size="3" maxlength="3">
     <table>
         <tr>
@@ -40,6 +19,37 @@ session_start();
             <label>カード番号</label>
             <span class="focus_line"></span>
                 </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                    <select name="cardExpirationMonth">
+            <option value="1" selected="selected">01</option>
+            <option value="2">02</option>
+            <option value="3">03</option>
+            <option value="4">04</option>
+            <option value="5">05</option>
+            <option value="6">06</option>
+            <option value="7">07</option>
+            <option value="8">08</option>
+            <option value="9">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <select name="cardExpirationYear">
+    <option value="2015" selected="selected">2020</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+    <option value="2025">2025</option>
+    <option value="2026">2026</option>
+    </select>
             </td>
         </tr>
         <tr>
