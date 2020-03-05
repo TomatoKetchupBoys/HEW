@@ -1,4 +1,4 @@
-        <button type="button" class="drawer-toggle drawer-hamburger">
+        <button type="button" class="drawer-toggle drawer-hamburger basicOnly">
             <span class="sr-only">toggle navigation</span>
             <span class="drawer-hamburger-icon"></span>
         </button>
