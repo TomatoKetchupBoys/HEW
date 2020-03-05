@@ -461,4 +461,7 @@ th,td {
 .main-container button .left{
     padding-left: 5rem;
 }
+.main-container .flexer{
+    display: flex;
+}
 

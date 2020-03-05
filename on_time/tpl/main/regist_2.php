@@ -9,8 +9,6 @@ session_start();
 <p>2/2</p>
     <!-- ここにクレジット情報登録の項目 -->
 
-
-    <input type="tel" name="securityNumber" size="3" maxlength="3">
     <table>
         <tr>
             <td>
@@ -21,7 +19,7 @@ session_start();
                 </div>
             </td>
         </tr>
-        <tr>
+        <tr class="flexer">
             <td>
                     <select name="cardExpirationMonth">
             <option value="1" selected="selected">01</option>
@@ -38,8 +36,6 @@ session_start();
             <option value="12">12</option>
         </select>
             </td>
-        </tr>
-        <tr>
             <td>
             <select name="cardExpirationYear">
     <option value="2015" selected="selected">2020</option>
@@ -50,6 +46,15 @@ session_start();
     <option value="2025">2025</option>
     <option value="2026">2026</option>
     </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <div class="cp_iptxt">       
+            <input type="tel" class="ef" name="securityNumber" size="3" maxlength="3">
+            <label>Sec-No</label>
+            <span class="focus_line"></span>
+           </div>    
             </td>
         </tr>
         <tr>
