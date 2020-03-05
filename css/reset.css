@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* 初期化設定 */
+*{
+	box-sizing: border-box;
+	margin:0px;/*間隔の初期化*/
+	padding:0px;/*余白の初期化*/
+	resize: none;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	font-size: 1.6em;
+	top: 0px;
+	left: 0px;
+	width: 407px;
+	height: 812px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+li{
+	list-style-type:none;/*マーカーの非表示*/
+	list-style-position:outside;/*位置制御*/
+}
+a{
+	text-decoration:none;/*文字装飾初期化*/
+	color: black;
+}
+button{
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	appearance: none;
+}
