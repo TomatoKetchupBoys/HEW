@@ -1,4 +1,4 @@
-        <button type="button" class="drawer-toggle drawer-hamburger">
+        <button type="button" class="drawer-toggle drawer-hamburger basicOnly">
             <span class="sr-only">toggle navigation</span>
             <span class="drawer-hamburger-icon"></span>
         </button>
@@ -16,7 +16,7 @@
             <li class="simple toLogin drawer-dropdown-menu-item">ログイン</li>
             <li class="basic toChange drawer-dropdown-menu-item">ユーザー情報確認/変更</li>
             <li class="basic toNotice drawer-dropdown-menu-item">お知らせ</li>
-            <li class="basic toSearch_result drawer-dropdown-menu-item">ヘルプ</li>
+            <li class="basic toHelp drawer-dropdown-menu-item">ヘルプ</li>
             <li class="basic toTerm drawer-dropdown-menu-item">利用規約</li>
             <li class="basic toPolicy drawer-dropdown-menu-item">プライバシーポリシー</li>
             <li class="simple toLogout drawer-dropdown-menu-item">ログアウト</li>
@@ -24,4 +24,5 @@
         </ul>
     </div>
     </nav>
+
     <section id="ajaxArea">
