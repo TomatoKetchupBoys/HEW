@@ -6,12 +6,12 @@
 function require_page($header, $side, $navi, $main, $footer){
     // 表示ページの判断
     // GETで送られてきた場合
-    if(isset($_GET['page'])){
+    if(isset($_GET['currentpage'])){
         $main = './tpl/main/'.$_GET['currentPage'].'.php';
     }
 
     // POSTで送られてきた場合
-    if(isset($_POST['page'])){
+    if(isset($_POST['currentpage'])){
         $main = './tpl/main/'.$_POST['currentPage'].'.php';
     }
 
