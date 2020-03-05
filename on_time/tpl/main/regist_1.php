@@ -33,45 +33,61 @@ session_start();
 
 
 <form forRegist>
-<h1><img src="./images/garage/simple_logo.jpg" alt="ロゴマーク"></h1>
+<div class="main-container">
 <h2>新規会員登録</h2>
-<button type="button" class="back">前ページへ戻る</button>
 <p>1/2</p>
     <table>
         <tr>
-            <th>名前</th>
-            <td><input type="text" name="name" required 
+            <td>
+            <div class="cp_iptxt">
+                <input class="ef" type="text" name="name" required 
                 <?php if(isset($_SESSION['temp']['name'])){ ?>
                     value="<?php echo $_SESSION['temp']['name']; ?>"
                 <?php } ?>
-            ></td>
+            >
+            <label>名前</label>
+            <span class="focus_line"></span>
+                </div>
+            </td>
         </tr>
         <tr>
-            <th>電話番号</th>
-            <td><input type="tel" name="tel" pattern="^\d{10,11}" required 
+            <td>
+            <div class="cp_iptxt">
+                <input class="ef" type="tel" name="tel" pattern="^\d{10,11}" required 
                 <?php if(isset($_SESSION['temp']['tel'])){ ?>
                     value="<?php echo $_SESSION['temp']['tel']; ?>"
                 <?php } ?>
-            ></td>
+            >
+            <label>電話番号</label>
+            <span class="focus_line"></span>
+            </td>
         </tr>
         <tr>
-            <th>メールアドレス</th>
-            <td><input type="email" name="email" patern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" required 
+            <td>
+            <div class="cp_iptxt">
+                <input class="ef"type="email" name="email" patern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" required 
                 <?php if(isset($_SESSION['temp']['email'])){ ?>
                     value="<?php echo $_SESSION['temp']['email']; ?>"
                 <?php } ?>
-            ></td>
+            >
+            <label>住所</label>
+            <span class="focus_line"></span>
+            </td>
         </tr>
         <tr>
-            <th>パスワード</th>
-            <td><input type="password" name="password" patern="^[\w-+.]{8,}" required 
+            <td>
+            <div class="cp_iptxt">
+                <input class="ef" type="password" name="password" patern="^[\w-+.]{8,}" required 
                 <?php if(isset($_SESSION['temp']['password'])){ ?>
                     value="<?php echo $_SESSION['temp']['password']; ?>"
                 <?php } ?>
-            ></td>
+            >
+            <label>パスワード</label>
+            <span class="focus_line"></span>
+            </td>
         </tr>
         <tr>
-            <td></td>
+            <td><button type="button" class="back">前ページへ戻る</button></td>
             <td><button type="button" class="form toRegist_2">次へ</button></td>
         </tr>
     </table>
@@ -80,7 +96,8 @@ session_start();
     <li class="simple toLogin">ログイン</li>
     <li>サポート</li>
 </ul>
-
+<h1><img src="./images/logo.png" ></h1>
+</div>
 </section><!-- #innerAjaxArea -->
         <footer class="basicOnly">
             <ul>

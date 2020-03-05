@@ -66,12 +66,15 @@ $(function () {
             .done(function(data1, data2){
                 // main部分を入れ替える
                 $('#ajaxArea').html(data2[0]);
+                $('header').css('display','none');
+                $('footer').css('display','none');
+                $('.drawer-toggle').css('display','none');
+                $('.drawer-menu').css('display','none');
+                $('.drawer-nav').css('display','none');
             })
             .fail(function(data){
             });
 
-            // .basicOnlyに.isHideを付与
-            $('.basicOnly').addClass('isHide');
         }
     );
 
@@ -114,7 +117,8 @@ $(function () {
             });
 
             // .basicOnlyから.isHideを削除
-            $('.basicOnly').removeClass('isHide');
+                $('header').css('display','block');
+                $('footer').css('display','block');
         }
     );
 
@@ -209,7 +213,9 @@ $(function () {
             });
             
             // .basicOnlyから.isHideを削除
-            $('.basicOnly').removeClass('isHide');
+            $('header').css('display','block');
+            $('footer').css('display','block');
+
         }
     );
 
@@ -247,7 +253,9 @@ $(function () {
             });
             
             // .basicOnlyから.isHideを削除
-            $('.basicOnly').removeClass('isHide');
+            $('header').css('display','block');
+            $('footer').css('display','block');
+            
         }
     );
     
