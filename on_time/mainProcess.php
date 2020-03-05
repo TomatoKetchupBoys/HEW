@@ -41,7 +41,7 @@ if($_POST['page'] == 'login'){
 }
 
 // .formクリック時
-if($_POST['page'] == 'form' || $_POST['page'] == 'search'){
+if($_POST['page'] == 'form'){
     // 送られてきた各値を$_SESSIONに格納
     set_session('temp');
 }

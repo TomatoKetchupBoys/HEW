@@ -255,11 +255,4 @@ table th{
 th,td {
     display: block;
     width: 100%;
-}
-
-
-
-
-.isHide{
-    display: none;
-}
+    }
