@@ -21,7 +21,7 @@ session_start();
         </tr>
         <tr class="flexer">
             <td>
-                    <select name="cardExpirationMonth">
+                    <select name="card cardMonth">
             <option value="1" selected="selected">01</option>
             <option value="2">02</option>
             <option value="3">03</option>
@@ -35,9 +35,7 @@ session_start();
             <option value="11">11</option>
             <option value="12">12</option>
         </select>
-            </td>
-            <td>
-            <select name="cardExpirationYear">
+            <select name="card cardYear">
     <option value="2015" selected="selected">2020</option>
     <option value="2021">2021</option>
     <option value="2022">2022</option>

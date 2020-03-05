@@ -464,4 +464,10 @@ th,td {
 .main-container .flexer{
     display: flex;
 }
+.main-container .flexer .card{
+    border: 1px solid #000;
+    background: none;
+    font-size: 1em;
+    line-height: 1em;
+}
 
