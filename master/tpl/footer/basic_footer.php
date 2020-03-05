@@ -61,6 +61,7 @@
 <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
 <script src="./js/material-dashboard.min.js?v=2.1.2" type="text/javascript"></script>
 <script src="./js/function.js" type="text/javascript"></script>
+<script src="./js/default.js" type="text/javascript"></script>
 <script src="./js/public.js" type="text/javascript"></script>
 </body>
 </html>
