@@ -15,5 +15,6 @@
     <script src="js/iscroll.js"></script>
     <script src="js/script.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/modaal.min.js"></script>
 </body>
 </html>

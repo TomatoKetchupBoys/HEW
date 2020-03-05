@@ -9,6 +9,8 @@
     <meta name="apple-mobile-web-app-title" content="テストサイト">
     <link rel="apple-touch-icon" sizes="180x180" href="./images/howl.jpg">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    
 
     <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
     <link href="css/slick.css" rel="stylesheet" type="text/css">
@@ -17,6 +19,8 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/drawer.css">
+    <link rel="stylesheet" href="./css/modaal.min.css">
+    
 
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
 </head>
