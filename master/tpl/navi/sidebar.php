@@ -4,20 +4,20 @@
 
         Tip 2: you can also add an image using data-image tag
     -->
-      <div class="logo"><a href="" class="simple-text logo-normal">
+      <div class="logo"><a href="./index.php" class="simple-text logo-normal">
           ON TIME
         </a></div>
       <div class="sidebar-wrapper">
         <ul class="nav">
             <li>メタテーブル
-                <li class="nav-item active  ">
+                <li class="nav-item">
                     <a class="nav-link" href="./refarence_time.php">
                         <i class="material-icons">dashboard</i>
                         <p>基準時間</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./intervals.php">
+                    <a class="nav-link" href="./repetition.php">
                         <i class="material-icons">person</i>
                         <p>繰り返し間隔</p>
                     </a>
@@ -37,7 +37,7 @@
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./parking_positions">
+                    <a class="nav-link" href="./parking_positions.php">
                         <i class="material-icons">bubble_chart</i>
                         <p>駐車位置</p>
                     </a>
