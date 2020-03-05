@@ -9,10 +9,11 @@
                         <li class="garage-name">TIMES東通り</li>
                         <li class="garage-post">大阪市生野区巽南2-5-13</li>
                         <li class="garage-time">2020/02/23 19:00<br>
-                        <span>↓</span><br>
+                        <span>…</span><br>
                         2020/02/23 20:00</li>
                         <li class="garage-limit">次の予約時間まで<br>
-                        あと<span class="limit-time">15分</span>です</li>
+                        あと<span class="limit-time">15分</span><br>
+                    です</li>
                     </ul>
                 </section>
                 <section class="reverse">
