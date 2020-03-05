@@ -1,10 +1,10 @@
 
 html{
     height:0 auto;
+    height:100%;
 }
 body{
-    height:120vh;
-    -webkit-overflow-y:hidden;
+    height:100%;
 }
 .basic, .simple{
 
@@ -12,18 +12,16 @@ body{
 }
 #ajaxArea{
     width:100vw;
-    height:80vh;
+    height:70vh;
     text-align: center;
-    overflow-y:hidden;
     margin: 0 auto;
     padding: 0 auto;
 }
 #cardArea{
-    overflow:hidden;
     margin:0 auto;
     padding: 0 auto;
     width:100%;
-    margin-top: 10.5em;
+    margin-top: 9.5em;
     opacity:0;
     animation:fadein 0.3s forwards;    
 }
@@ -55,20 +53,18 @@ article{
     padding: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    filter: drop-shadow(30px 10px 4px #aaaaaa);
     border-radius: 1em;
     visibility: visible;
 }
 .reverse{
     background: rgb(255, 236, 173);
-    filter: drop-shadow(30px 10px 4px #aaaaaa);
     opacity:0;
     position:relative;
     height:100%;
     width:80%;
     margin: 0 auto;
     padding: 0 auto;
-    top:-30em;
+    top:-34em;
     visibility: hidden;
     border-radius: 1em;
 }
@@ -207,6 +203,7 @@ article{
     background: rgb(250, 242, 218);
     width:80%;
     border-radius: 1em;
+    font-size: 5rem;
 }
 
 .front .garage-limit{
@@ -214,10 +211,9 @@ article{
 }
 .front .limit-time{
     line-height: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
-    font-size: 3em;
-    color: red;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 4em;
 }
 /* -----------------------------------新規登録画面---------------------------------------------------- */
 form{
@@ -256,3 +252,151 @@ th,td {
     display: block;
     width: 100%;
     }
+
+/* ----------------------------------------------予約画面-------------------------------------------------------- */
+.reserv{
+    height:70%;
+    width:100%;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    margin-top:350px;   
+}
+.reserv .form-container{
+    width:80%;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+}
+.reserv h1{
+    border-bottom: 1px solid #000;
+
+    margin-bottom: 2em;
+}
+.reserv h2{
+    text-align: left;
+    font-size: 1em;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.reserv h2:before{
+    content:'●';
+}
+
+.cp_iptxt {
+	position: relative;
+	width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cp_iptxt input[type='text'] {
+	font: 1em sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	letter-spacing: 1px;
+	padding-left: 4em;
+}
+.cp_iptxt input[type='text']:focus {
+	outline: none;
+}
+.ef {
+	padding: 4px 0;
+    border: 0;
+	border-bottom: 1px solid #1b2538;
+	background-color: transparent;
+}
+.ef ~ .focus_line {
+	position: absolute;
+	bottom: 0em;
+	left: 0;
+	width: 0;
+	height: 2px;
+	transition: 0.4s;
+	background-color: #da3c41;
+}
+.ef:focus ~ .focus_line,
+.cp_iptxt.ef ~ .focus_line {
+	width: 100%;
+	transition: 0.4s;
+}
+.ef ~ label {
+    position: absolute;
+    text-align: left;
+	z-index: -1;
+	top: 4px;
+	left: 0;
+	width: 100%;
+	transition: 0.3s;
+	letter-spacing: 0.5px;
+	color: #aaaaaa;
+}
+.ef:focus ~ label, .cp_iptxt.ef ~ label {
+	font-size: 0.5em;
+	top: -16px;
+	transition: 0.3s;
+	color: #da3c41;
+}
+.form-control{
+    height:2em;
+    font-size: 1em;
+    width:100%;
+    padding: 1px;
+}
+.datelist{
+    line-height: 100px;
+    margin-top: 1rem;
+}
+.datetime{
+    border: none;
+    margin: 10px;
+    font-size: 4rem;
+    width:50rem;
+}
+.search{
+    border: none;
+    width:80%;
+    margin: 0 auto;
+    padding:0 auto;
+    margin-top: 8rem;
+    padding: 3rem;
+    border-radius: 3rem;
+    background: rgb(47, 60, 119);
+    border: 1px solid rgb(31, 29, 66);
+    color: white;
+}
+
+/* ------------------------------------------検索結果---------------------------------------------------------------- */
+
+.search-container{
+    width:80%;
+    height:100%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.search-container h1{
+    text-align: center;
+    border-bottom: 1px solid #000;
+    margin-top: 40rem;
+    margin-bottom: 5rem;
+}
+#map_canvas{
+    width:100%;
+    height:75rem;
+    z-index:1;
+}
+.result-view{
+    background: rgb(152, 255, 152);
+    padding: 5rem;
+    border-radius: 3rem;
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.result-view h2{
+    font-size: 5rem;
+}
+.result-view p{
+    font-size: 3rem;
+}
