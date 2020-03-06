@@ -26,9 +26,9 @@
         </header>
 
 <?php
-if(!isset($_SESSION)){
-session_start();
-}
+// if(!isset($_SESSION)){
+// session_start();
+// }
 ?>
 
 
@@ -43,8 +43,7 @@ session_start();
                 <input class="ef" type="text" name="name" required 
                 <?php if(isset($_SESSION['temp']['name'])){ ?>
                     value="<?php echo $_SESSION['temp']['name']; ?>"
-                <?php } ?>
-            >
+                <?php } ?> placeholder="名前">
             <label>名前</label>
             <span class="focus_line"></span>
                 </div>
@@ -56,8 +55,7 @@ session_start();
                 <input class="ef" type="tel" name="tel" pattern="^\d{10,11}" required 
                 <?php if(isset($_SESSION['temp']['tel'])){ ?>
                     value="<?php echo $_SESSION['temp']['tel']; ?>"
-                <?php } ?>
-            >
+                <?php } ?> placeholder="電話番号">
             <label>電話番号</label>
             <span class="focus_line"></span>
             </td>
@@ -68,9 +66,8 @@ session_start();
                 <input class="ef"type="email" name="email" patern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" required 
                 <?php if(isset($_SESSION['temp']['email'])){ ?>
                     value="<?php echo $_SESSION['temp']['email']; ?>"
-                <?php } ?>
-            >
-            <label>住所</label>
+                <?php } ?>　placeholder="※@あり">
+            <label>メールアドレス</label>
             <span class="focus_line"></span>
             </td>
         </tr>
@@ -80,8 +77,7 @@ session_start();
                 <input class="ef" type="password" name="password" patern="^[\w-+.]{8,}" required 
                 <?php if(isset($_SESSION['temp']['password'])){ ?>
                     value="<?php echo $_SESSION['temp']['password']; ?>"
-                <?php } ?>
-            >
+                <?php } ?> placeholder="パスワード">
             <label>パスワード</label>
             <span class="focus_line"></span>
             </td>

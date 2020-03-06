@@ -58,5 +58,69 @@ function set_session($info){
     var_dump($_SESSION);
 
     return 0;
+
+
+// #############################################
+// 機能：mySQLに対してSELECTする
+// 引数：SELECT文
+// #############################################
+function sql_select($sql){
+    // 変数宣言
+    $row = array();
+    
+    // データベース接続
+    $cn = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);
+    mysqli_set_charset($cn,'utf8');
+    // sqlの実行
+    $result = mysqli_query($cn,$sql);
+    while($to_array = mysqli_fetch_assoc($result)){
+        $row[] = $to_array;
+    }
+    // データベース切断
+    mysqli_close($cn);
+    return $row;
+}
+// #############################################
+// 機能：mySQLに対してINSERTする
+// 引数：INSERT文
+// #############################################
+function sql_insert($sql){
+    // データベース接続
+    $cn = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);
+    mysqli_set_charset($cn,'utf8');
+    // sqlの実行
+    mysqli_query($cn,$sql);
+    // データベース切断
+    mysqli_close($cn);
+    return 0;
+}
+// #############################################
+// 機能：mySQLに対してUPDATEする
+// 引数：UPDATE文
+// #############################################
+function sql_update($sql){
+    // データベース接続
+    $cn = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);
+    mysqli_set_charset($cn,'utf8');
+    // sqlの実行
+    mysqli_query($cn,$sql);
+    // データベース切断
+    mysqli_close($cn);
+    return 0;
+}
+// #############################################
+// 機能：mySQLに対してDELETEする
+// 引数：DELETE文
+// #############################################
+function sql_delete($sql){
+    // データベース接続
+    $cn = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);
+    mysqli_set_charset($cn,'utf8');
+    // sqlの実行
+    mysqli_query($cn,$sql);
+    // データベース切断
+    mysqli_close($cn);
+    return 0;
+}
 }
 ?>

@@ -18,7 +18,7 @@
         </div>
 </div>
 
-<h1 class="search">検索</h1>
+<button class="search">検索</button>
 </div>
 
 </section>

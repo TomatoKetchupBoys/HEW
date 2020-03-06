@@ -36,24 +36,38 @@ if($_POST['page'] == 'back' || $_POST['page'] == 'login'){
 
 // .loginクリック時
 if($_POST['page'] == 'login'){
-    // 送られてきた各値を$_SESSIONに格納
-    set_session('perm');
+
+    $sql = "INSERT INTO members(name,tel,mail,password,card_Number,card_year_month,securiy_Number,registration_date) VALUES ('".$name."','".$tel."','".$email."','".$pass."','".$card_Number."','".$year_month."','".$security_Number."','".date('y-m-d')."');";
+  
+    $cn = mysqli_connect('localhost','root','','ontime');
+    mysqli_set_charset($cn,'utf8');
+    mysqli_query($cn,$sql);
+    mysqli_close($cn);
+    return;
+
+    // // 送られてきた各値を$_SESSIONに格納
+    // set_session('perm');
+
 }
 
 // .formクリック時
-if($_POST['page'] == 'form'){
+if($_POST['page'] == 'form' || $_POST['page'] == 'search'){
     // 送られてきた各値を$_SESSIONに格納
     set_session('temp');
 }
+
 // .form以外クリック時、かつ$_SESSION['temp']がある時
 elseif(isset($_SESSION['temp'])){
     // $_SESSION['temp']の初期化
     unset($_SESSION['temp']);
 }
 
+
 // .logoutクリック時
 if($_POST['page'] == 'logout'){
     // $_SESSION['perm']の初期化
     unset($_SESSION['perm']);
 }
+
+// .
 ?>
