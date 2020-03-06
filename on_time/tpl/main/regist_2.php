@@ -19,8 +19,9 @@ session_start();
                 </div>
             </td>
         </tr>
-        <tr class="flexer">
-            <td>
+        <tr>
+            <td class="flexer">
+            <div class="cp_ipselect cp_sl01">
                     <select name="card cardMonth">
             <option value="1" selected="selected">01</option>
             <option value="2">02</option>
@@ -35,6 +36,8 @@ session_start();
             <option value="11">11</option>
             <option value="12">12</option>
         </select>
+        </div>
+        <div class="cp_ipselect cp_sl01">
             <select name="card cardYear">
     <option value="2015" selected="selected">2020</option>
     <option value="2021">2021</option>
@@ -44,6 +47,7 @@ session_start();
     <option value="2025">2025</option>
     <option value="2026">2026</option>
     </select>
+</div>
             </td>
         </tr>
         <tr>
